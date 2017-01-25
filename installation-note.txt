@@ -1,0 +1,24 @@
+# connect to network first 
+
+#update system
+apt-get update
+
+#install apache
+sudo apt-get install apache2
+update-rc.d apache2 enable
+
+#install various tools 
+sudo apt-get install rrdtool
+sudo apt-get install php5
+sudo apt-get install php5-dev
+sudo apt-get install php-pear
+sudo apt-get install libyaml-dev
+sudo pecl install yaml-0.6.3
+sudo apt-get install php5-rrd
+sudo apt-get install phpmyadmin
+
+#install and set up mysql server
+sudo apt-get install mysql-server mysql-client
+mysql_secure_installation
+
+#still working...
