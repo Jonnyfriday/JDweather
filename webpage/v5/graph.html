@@ -1,0 +1,13 @@
+ #!/usr/local/bin/rrdcgi
+ <HTML>
+ <HEAD><TITLE>RRDCGI Demo</TITLE></HEAD>
+ <BODY>
+ <H1>RRDCGI Example Page</H1>
+ <P>
+ <RRD::GRAPH demo.png --lazy --title="Temperatures"
+          DEF:cel=demo.rrd:exhaust:AVERAGE
+          LINE2:cel#00a000:"D. Celsius">
+
+ </P>
+ </BODY>
+ </HTML>
